@@ -15,3 +15,13 @@ About Us Section: Information about the museum and its mission.
 Contact Us Section: Contact form for users to get in touch.
 
 Fully responsive across desktop, tablet, and mobile devices.
+
+Technologies Used
+
+HTML5 & CSS3
+
+SCSS for custom styling
+
+Bootstrap 5 for responsive layout
+
+Google Fonts: Poppins
