@@ -1,22 +1,19 @@
 {
-  "name": "beautifulart",
+  "name": "beautiful-arts",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Bootstrap-based art gallery website project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "sass assets/style/scss/main.scss assets/style/css/main.min.css --style=compressed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JosephRidge/Beautiful_Arts.git"
+    "url": "git+https://github.com/terv569/FUTURE_DS_01.git"
   },
-  "author": "Joseph Ridge",
+  "author": "Tervil Moywaywa",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JosephRidge/Beautiful_Arts/issues"
-  },
-  "homepage": "https://github.com/JosephRidge/Beautiful_Arts#readme",
   "dependencies": {
     "bootstrap": "^5.3.8"
   }
 }
+

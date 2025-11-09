@@ -1,12 +1,25 @@
-$primary: #4F3130 ;
+$primary: #4F3130;
 $secondary: #AA5042;
 $warning: #D8BD8A;
-// scss-docs-start font-variables
-// stylelint-disable value-keyword-case
-$font-family-sans-serif:  poppins,     system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:   poppins,    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
-
-
+$font-family-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom Gallery Styles
+#gallery .card-img-top {
+  width: 400px;
+  height: 300px;
+  object-fit: cover; // keeps aspect ratio and crops if needed
+  margin: 0 auto;    // centers the image in the card
+}
+
+// Optional: Sponsor Logos
+#sponsorship img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
