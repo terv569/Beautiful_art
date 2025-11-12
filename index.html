@@ -1,144 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beautiful Arts Gallery</title>
-  <link rel="stylesheet" href="assets/style/css/main.min.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beau-Arts — Home</title>
+
+  <link href="assets/style/css/main.min.css" rel="stylesheet" />
   <link rel="shortcut icon" href="assets/svg/logo.svg" type="image/x-icon" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
   <style>
-    #home {
-      background-image: url("assets/images/museum_art.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+    #home { background-image:url("assets/images/museum_art.jpg"); background-size:cover; background-position:center; background-repeat:no-repeat; }
+    .hero-overlay { position:absolute; inset:0; background: rgba(79,49,48,0.55); }
+    .hero-content{ position:relative; z-index:2; }
   </style>
 </head>
-
 <body class="min-vh-100 bg-light">
-  
-  <nav class="navbar navbar-expand-lg bg-primary position-relative z-3">
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top">
     <div class="container py-3">
-      <a class="navbar-brand" href="#home">
-        <img src="assets/svg/logo.svg" alt="logo" class="img-fluid me-3" width="40" />
+      <a class="navbar-brand text-light d-flex align-items-center" href="index.html">
+        <img src="assets/svg/logo.svg" width="40" class="me-2" alt="logo"> Beau-Arts
       </a>
-      <button class="navbar-toggler bg-warning rounded-5" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent">
+      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link text-light active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#sponsorship">Sponsorship</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#about-us">About Us</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#contact-us">Contact Us</a></li>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="sponsorship.html">Sponsorship</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 rounded-5" type="search" placeholder="Find art..." />
-          <button class="btn btn-outline-warning rounded-5" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
 
-  
-  <section id="home" class="min-vh-100 text-light d-flex align-items-center">
-    <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-50"></div>
-    <div class="container position-relative text-center">
+  <!-- HERO -->
+  <section id="home" class="min-vh-100 d-flex align-items-center position-relative">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content text-center text-light py-5">
       <h1 class="display-3 fw-bold text-warning">Beautiful Arts Gallery</h1>
-      <h3 class="fw-light">Where Creativity Meets History</h3>
-      <p class="lead mt-4">
-        A timeless fusion of modern and medieval art that inspires generations.
-      </p>
-      <button class="btn btn-warning btn-lg mt-3">Support Us</button>
+      <h4 class="fw-light">A blend of modern and medieval ages</h4>
+      <p class="lead mt-4 col-lg-8 mx-auto">A curated collection that celebrates creativity across time — explore works, support artists, and get involved.</p>
+      <div class="mt-4">
+        <a href="gallery.html" class="btn btn-warning btn-lg me-2">Explore Gallery</a>
+        <a href="sponsorship.html" class="btn btn-outline-light btn-lg">Support Us</a>
+      </div>
     </div>
   </section>
 
-
-
-<section id="gallery" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="text-primary mb-5">Gallery</h2>
-    <div class="row g-4">
-      
-      
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card border-0 shadow-sm">
-          <img src="assets/images/art1.jpg" alt="Art 1"
-               class="card-img-top"
-               style="width:400px; height:300px; object-fit:cover; margin:0 auto; max-width:100%;">
-          <div class="card-body">
-            <p class="card-text fw-semibold">Abstract Dreams</p>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card border-0 shadow-sm">
-          <img src="assets/images/art2.jpg" alt="Art 2"
-               class="card-img-top"
-               style="width:400px; height:300px; object-fit:cover; margin:0 auto; max-width:100%;">
-          <div class="card-body">
-            <p class="card-text fw-semibold">Medieval Masterpiece</p>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card border-0 shadow-sm">
-          <img src="assets/images/art3.jpg" alt="Art 3"
-               class="card-img-top"
-               style="width:400px; height:300px; object-fit:cover; margin:0 auto; max-width:100%;">
-          <div class="card-body">
-            <p class="card-text fw-semibold">Colors of the Future</p>
-          </div>
-        </div>
-      </div>
-
-      
-      
-          </div>
-        </div>
-      
-
-      
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Beau-Arts Gallery</p>
     </div>
-  </div>
-</section>
+  </footer>
 
+</body>
+</html>
 
-  
-
-<section id="sponsorship" class="py-5 bg-white">
-  <div class="container text-center">
-    <h2 class="text-primary mb-5">Our Sponsors</h2>
-    <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
-      <img src="assets/images/sponsor1.jpg" alt="Sponsor 1"
-           style="width:220px; height:auto; object-fit:contain;">
-      <img src="assets/images/sponsor2.jpg" alt="Sponsor 2"
-           style="width:220px; height:auto; object-fit:contain;">
-      <img src="assets/images/sponsor3.jpg" alt="Sponsor 3"
-           style="width:220px; height:auto; object-fit:contain;">
-      
-    </div>
-  </div>
-</section>
 
 
   
